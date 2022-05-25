@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
+    <title>contact</title>
+</head>
+<body>
+    
+<!-- start header -->
+<header>
+    <div class="container">
+    
+        <div class="logo">
+            <a href="index.html">PASSERO COOKING SCHOOL</a>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">about</a></li>
+                <li><a href="classes.html" class="nav-link">classes</a></li>
+                <li><a href="contact.html" class="nav-link">contact</a></li>
+                <li><a href="login.html" class="nav-link">login</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- start contact -->
+<div class="contact">
+    <div class="container">
+        <div class="contact-content">
+            <div class="info">
+                <h2>Contact us</h2>
+                <p>For information on 1-on-1 classes with
+                    an instructor, please provide some basic informati
+                    on on your goals and we’ll provide our recommended next steps.</p>
+                    <hr>
+                    <p>123 Demo Street<br>New York, NY 12345</p>
+                    <span>(555) 555-5555<br>email@example.com</span>
+            </div>
+            <div class="inputfields">
+                <form action="">
+                    <label class="main-label">Name *</label>
+                    <div class="name">
+                        <div class="ffname">
+                            <input type="text" name="first-name" id="fname" class="main-input" required>
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="llname">
+                            <input type="text" name="last-name"id="lname" class="main-input" required>
+                            <label for="lname">last-name Name</label>
+                        </div>
+                    </div>
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" class="main-input" required>
+                    <label for="subject">Subject *</label>
+                    <input type="text" name="subject" id="subject" class="main-input" required>
+                    <label for="message">Message *</label>
+                    <textarea name="message" id="message" class="main-input"></textarea>
+                    <input type="submit" value="submit" onclick="validation_sign()">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end contact -->
+
+
+<!-- start footer -->
+  
+<footer>
+    <div class="container">
+        <div class="box">
+            <h3><a href="index.html">PASSERO COOKING SCHOOL</a></h3>
+            <ul class="social">
+                <li>
+                    <a href="#" class="facebook"><button><i class="fa-brands fa-facebook-f"></i></button></a>
+                    <span class="span1">facebook</span>
+                </li>
+                <li>
+                    <a href="#" class="linkedin"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                    <span class="span3">linkedin</span>
+                </li>
+                <li>
+                    <a href="#" class="github"><button><i class="fa-brands fa-github"></i></button></a>
+                    <span class="span4">github</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <ul class="links">
+                <li><a href="about.html">about</a></li>
+                <li><a href="classes.html">classes</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="line">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <div class="info">Egypt, Qalyubia, Toukh, ST Number 220</div>
+            </div>
+            <div class="line">
+                <i class="far fa-clock fa-fw"></i>
+                <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+                <i class="fas fa-phone-volume fa-fw"></i>
+                <div class="info">
+                <span>+20123456789</span>
+                <span>+20198765432</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+<script src="js/contact.js"></script>
+</body>
+</html>

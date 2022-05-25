@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body>
+    <!-- start header -->
+    
+<header>
+    <div class="container">
+        
+        <div class="logo">
+            <a href="index.html">PASSERO COOKING SCHOOL</a>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">about</a></li>
+                <li><a href="classes.html" class="nav-link">classes</a></li>
+                <li><a href="contact.html" class="nav-link">contact</a></li>
+                <li><a href="login.html" class="nav-link">login</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- start login -->
+<div class="login">
+    <div class="container">
+        <div class="login-content">
+            <div class="signin">
+                <form class="sign-in-form" method="post">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="email" placeholder="Email" name="username" required/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" id="password" required/>
+                    </div>
+                    <input type="submit" value="LOGIN" class="btn" />
+                    <a href="#" class="register-now">Don't have an account ? Register now</a>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <!-- regreistion  -->
+            <div class="signup">
+                <form class="sign-up-form" method="post" action="">
+                    <h2 class="title">Sign up</h2>
+                    <input type="text" name="first-name" placeholder="First_Name" class="main-input" required>
+                    <input type="text" name="last-name" placeholder="last_Name" class="main-input" required>
+                    <input type="email" name="email" placeholder="Email" class="main-input" required>
+                    <input type="password" id="password1" name="password" placeholder="Password" class="main-input" required maxlength="50">
+                    <div class="toggle-password">
+                        <i class="fa fa-eye" id="eye" onclick="toggle()">
+                        </i>
+                    </div>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" class="main-input" required >
+                    <input type="text" name="Address" placeholder="Address" class="main-input" required>
+                    <div class="radio-input">
+                        <input type="radio" name="gender" value="male" id="male" >
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <input type="submit" value="submit" value="submit" onclick="validation_signup()" >
+                    <a href="" class="regesterreverse">Already have an account? Sign in</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end login -->
+<script src="js/login.js"></script>
+</body>
+</html>
